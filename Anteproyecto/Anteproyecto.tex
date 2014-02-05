@@ -1,0 +1,84 @@
+\documentclass[letter,openright,12pt]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\setcounter{secnumdepth}{3} % para que ponga 1.1.1.1 en subsubsecciones...
+\setcounter{tocdepth}{3} % para que añada las subsubsecciones en el indice...
+
+\begin{document}
+
+  \begin{titlepage}
+
+    \begin{center}
+      \vspace*{-1in}
+      \begin{figure}[htb]
+    \begin{center}
+      \includegraphics[width=8cm]{imagenes/Logo_Distrital.eps}
+    \end{center}
+    \end{figure}
+
+    FACULTAD DE INGENIERÍA\\
+    \vspace*{0.15in}
+    PROYECTO CURRICULAR DE INGENIERÍA DE SISTEMAS \\
+    \vspace*{0.6in}
+    \begin{large}
+    Tesis:\\
+    \end{large}
+    \vspace*{0.2in}
+    \begin{Large}
+    \textbf{EL TÍTULO DE LA TESIS} \\
+    \end{Large}
+    \vspace*{0.3in}
+    \begin{large}
+    Presentada por:\\
+      Nicolás Mauricio Garcia Garzon 20091020031
+      Luis Felipe Gonzalez Moreno 20091020035
+    \end{large}
+    \vspace*{0.3in}
+    \rule{80mm}{0.1mm}\\
+    \vspace*{0.1in}
+    \begin{large}
+    Dirigida por: \\
+    \end{large}
+    \end{center}
+
+    \end{titlepage}
+
+
+
+  \newpage
+  \mbox{}
+  \thispagestyle{empty} % para que no se numere esta página
+  
+  
+  \chapter*{}
+  \pagenumbering{Roman} % para comenzar la numeracion de paginas en numeros romanos
+  \begin{flushright}
+  \textit{Dedicado a \\
+  mi familia}
+  \end{flushright}
+  
+  \chapter*{Agradecimientos} % si no queremos que añada la palabra "Capitulo"
+  \addcontentsline{toc}{chapter}{Agradecimientos} % si queremos que aparezca en el índice
+  \markboth{AGRADECIMIENTOS}{AGRADECIMIENTOS} % encabezado 
+  ¡Muchas gracias a todos!
+  
+  \chapter*{Resumen} % si no queremos que añada la palabra "Capitulo"
+  \addcontentsline{toc}{section}{Resumen} % si queremos que aparezca en el índice
+  \markboth{RESUMEN}{RESUMEN} % encabezado
+  Una bonita historia
+  
+  \tableofcontents % indice de contenidos
+
+  \cleardoublepage
+  \addcontentsline{toc}{chapter}{Lista de figuras} % para que aparezca en el indice de contenidos
+  \listoffigures % indice de figuras
+
+  \cleardoublepage
+  \addcontentsline{toc}{chapter}{Lista de tablas} % para que aparezca en el indice de contenidos
+  \listoftables % indice de tablas
+  
+  \chapter{Introducción}
+  
+\end{document}
